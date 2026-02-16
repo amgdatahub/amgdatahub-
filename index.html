@@ -4,65 +4,116 @@
     <meta charset="UTF-8">
     <title>AMG Data Hub</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
+        * {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
             color: white;
-            text-align: center;
         }
+
         header {
-            padding: 20px;
-            font-size: 24px;
-            font-weight: bold;
-            background: #111827;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 10%;
+            align-items: center;
         }
-        .hero {
-            padding: 80px 20px;
+
+        header h2 {
+            color: #3b82f6;
         }
-        .hero h1 {
-            font-size: 40px;
-            margin-bottom: 20px;
-        }
-        .hero p {
-            font-size: 18px;
-            margin-bottom: 30px;
-            color: #cbd5e1;
-        }
-        .btn {
-            padding: 15px 30px;
-            background: #2563eb;
+
+        nav a {
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero span {
+            color: #3b82f6;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #cbd5e1;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
             margin: 10px;
             display: inline-block;
+            transition: 0.3s ease;
         }
-        .btn:hover {
-            background: #1d4ed8;
+
+        .primary {
+            background: #3b82f6;
+            color: white;
         }
+
+        .primary:hover {
+            background: #2563eb;
+        }
+
+        .secondary {
+            border: 2px solid #3b82f6;
+            color: white;
+        }
+
+        .secondary:hover {
+            background: #3b82f6;
+        }
+
         footer {
+            text-align: center;
+            padding: 30px;
+            background: #0f172a;
             margin-top: 100px;
-            padding: 20px;
-            background: #111827;
             font-size: 14px;
+            color: #94a3b8;
         }
     </style>
 </head>
 <body>
 
-<header>AMG Data Hub</header>
+<header>
+    <h2>AMG Data Hub</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Login</a>
+    </nav>
+</header>
 
 <section class="hero">
-    <h1>Fast, Reliable & Affordable Data Bundles</h1>
-    <p>Your trusted platform for MTN, Telecel & AirtelTigo bundles.</p>
-    <a href="#" class="btn">Buy Data</a>
-    <a href="#" class="btn">Login</a>
+    <h1>Powering Ghana With <span>Reliable Data</span></h1>
+    <p>Fast MTN, Telecel & AirtelTigo bundles delivered instantly with trusted automation.</p>
+    <a href="#" class="btn primary">Buy Data</a>
+    <a href="#" class="btn secondary">Login</a>
 </section>
 
 <footer>
-    © 2026 AMG Data Hub. All Rights Reserved.
+    © 2026 AMG Data Hub. Built by Mahmudu Muhammed-Mansoor.
 </footer>
 
 </body>
